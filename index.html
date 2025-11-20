@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizards and Ghouls - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d3b66 0%, #186a9f 50%, #06a77d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 600px;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            color: #e0e0ff;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #7dd3d3 0%, #d62246 50%, #ffd700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #e0e0ff;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #d62246 0%, #7dd3d3 50%, #ffd700 100%);
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid #1a1a2e;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 24px rgba(214, 34, 70, 0.6);
+            filter: brightness(1.1);
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .container {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.8rem;
+            }
+            .download-btn {
+                padding: 15px 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WIZARDS</h1>
+        <h2 class="subtitle">AND GHOULS</h2>
+        <p class="description">Embark on an epic magical adventure. Download now and begin your quest!</p>
+        <a href="https://github.com/Jemz-h/We-Game-/raw/refs/heads/main/Wizard%20&%20Ghouls.msi" class="download-btn" download>DOWNLOAD GAME</a>
+    </div>
+</body>
+</html>
